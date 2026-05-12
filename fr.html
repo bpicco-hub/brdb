@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WKRDXCLC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Site officiel du fan game POKéMON Bright Red & Deep Blue">
+    <meta name="robots" content="pokémon, fan game, fangame, bright red, deep blue, bright red deep blue, brdb, pokemon, benjamin picco">
+    <title>POKéMON BRDB</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon"  href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKRDXCLC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+    <div id="game_button" onclick="scrollToElementById('leather_section')" class="header-button unselectable">Le jeu</div>
+    <div id="download_button" onclick="scrollToElementById('download_section')" class="header-button unselectable">Télécharger</div>
+    <div id="red_background" class="header-background unselectable"></div>
+    <img id="lightning" class="unselectable" src="./img/lightning.png">
+    <img id="pokemon_logo" class="unselectable" src="./img/pokemon_logo.png">
+    <div id="blue_background" class="header-background unselectable"></div>
+    <iframe class="unselectable" allowfullscreen src="https://www.youtube.com/embed/5gXZePJ7BtI"></iframe>
+    <a href="faq_fr.html" class="no-style-link"><div id="contact_button" class="header-button unselectable">FAQ</div></a>
+    <div id="language_button" class="header-button unselectable" onclick="switchLanguage('en')"><img class="flag" src="./img/en.png" alt="English"/>English</div>
+</header>
+
+<img id="charizard" class="unselectable" src="./img/dracaufeu.png">
+<img id="blastoise" class="unselectable" src="./img/tortank.png">
+<img id="pikachu" class="unselectable" src="./img/pikachu.png">
+
+<div id="leather_section">
+    <div id="radial_join">
+        <div id="radial_left"></div>
+        <div id="radial_right"></div>
+    </div>
+
+    <div id="description_section">
+        <div id="top_description_section">
+            <img id="prof_chen" class="unselectable" src="img/prof_chen.png">
+            <div id="text_section">
+                <p>Bienvenue dans l'univers des POKéMON, un monde peuplé de puissants monstres sauvages aux pouvoirs
+                    destructeurs que certains humains tentent de capturer afin de s'approprier leur puissance. Parmi
+                    eux, quelques rares élus se distinguent et reçoivent le titre officiel de Dresseur POKéMON. Ces
+                    derniers s'affrontent dans de violents combats pour devenir le Dresseur le plus puissant : le
+                    Maître POKéMON.</p>
+
+                <img class="screenshot-mobile unselectable" src="img/screenshot01.png" onclick="showMainImage('img/screenshot01.png')"/>
+
+                <p>Revivez l'aventure originale avec une difficulté corsée et un scénario complètement neuf.
+                    Parcourez les lieux iconiques de la région de Kanto et affrontez ses 8 Champions d'arène et le
+                    terrible Conseil des 4. Parviendrez-vous à triompher cette fois-ci ?</p>
+
+                <img class="screenshot-mobile unselectable" src="img/screenshot02.png" onclick="showMainImage('img/screenshot02.png')"/>
+
+                <ul>
+                    <li>Une difficulté grandement réhaussée et une IA qui surpasse celles des jeux originaux.</li>
+                    <li>Un scénario enrichi, de nombreux évènements et des maps revisitées.</li>
+                    <li>Un système de terrain inédit qui ouvre de nouvelles stratégies.</li>
+                    <li>Des quêtes annexes et un système de leveling adapté.</li>
+                    <li>Une grande rejouabilité grâce à de nombreux paramètres de jeu et un mode NEW GAME+.</li>
+                    <li>Les challenges NUZLOCKE et MONOTYPE activables à la demande.</li>
+                    <li>De nombreux easter-eggs pour les fans de la première heure.</li>
+                </ul>
+
+                <img class="screenshot-mobile unselectable" src="img/screenshot03.png" onclick="showMainImage('img/screenshot03.png')"/>
+            </div>
+            <div id="screenshots_container">
+                <img class="screenshot unselectable" src="img/screenshot01.png" onclick="showMainImage('img/screenshot01.png')"/>
+                <img class="screenshot unselectable" src="img/screenshot02.png" onclick="showMainImage('img/screenshot02.png')"/>
+                <img class="screenshot unselectable" src="img/screenshot03.png" onclick="showMainImage('img/screenshot03.png')"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="download_section">
+    <img id="red_computer" class="unselectable" src="./img/red_computer.png"/>
+    <div id="download_link_container">
+        <img class="unselectable" id="windows_logo" src="./img/windows_logo.png"/>
+        <a class="unselectable" href="pokemon_brdb_installer_fr.exe" download>
+            <p id="download_link" class="unselectable">TÉLÉCHARGER POKéMON <span class="red">BRIGHT RED</span> &
+                <span class="blue">DEEP BLUE</span> (v4.4)</p>
+        </a>
+    </div>
+</div>
+
+<footer id="contact_section">
+
+    <div id="icons_section">
+        <a href="https://www.youtube.com/@pokemonbrightreddeepblue" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logo_youtube.png" class="unselectable icon" alt="YOUTUBE"/>
+        </a>
+        <a href="https://discord.gg/aUWWSBYZPc" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logo_discord.png" class="unselectable icon" alt="DISCORD"/>
+        </a>
+        <a href="https://pokemon-brdb.fandom.com/fr/wiki/Wiki_Pok%C3%A9mon_Bright_Red_Deep_Blue" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logo_fandom.png" class="unselectable icon" alt="WIKI"/>
+        </a>
+    </div>
+    <div id="copyrights">
+        <p>Pokémon Bright Red & Deep Blue est un fangame et n'est pas affilié à la licence officielle des jeux Pokémon.
+            Son développement a été réalisé dans un cadre personnel et sa diffusion ne revêt aucun caractère commercial.
+            <br/>
+            Pokémon est une marque appartenant à Nintendo, Creatures Inc. et Game Freak Inc.</p>
+    </div>
+</footer>
+
+<img class="zoomed-in-image" src=""/>
+<div id="background-layer" onclick="discardMainImage()"></div>
+
+</body>
+</html>

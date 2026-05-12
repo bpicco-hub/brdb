@@ -1,0 +1,589 @@
+:root {
+    --header-height: 90vh;
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "Pokemon_DP";
+    src: url('../font/pkmndp.eot?#iefix') format('embedded-opentype'),
+    url('../font/pkmndp.eot'),
+    url('../font/pkmndp.woff') format('woff'),
+    url('../font/pkmndp.ttf') format('truetype');
+}
+
+/******************** GENERAL ********************/
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-style-link {
+    color: inherit;
+    cursor: inherit;
+    text-decoration: inherit;
+}
+
+/******************** HEADER ********************/
+
+header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+}
+
+.header-button {
+    font-family: "Pokemon_DP";
+    position: absolute;
+    cursor: pointer;
+    font-size: 2vw;
+    min-height: 2vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 3px solid black;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 4px solid black;
+}
+
+.header-button:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#game_button {
+    top: 1vh;
+    left: 5vw;
+}
+
+#download_button {
+    top: 1vh;
+    left: 17vw;
+}
+
+#contact_button {
+    top: 1vh;
+    right: 22vw;
+}
+
+#language_button {
+    top: 1vh;
+    right: 5vw;
+}
+
+.flag {
+    max-height: 1.5vw;
+    width: 2.54vw;
+    margin-right: 0.5vw;
+}
+
+#red_background {
+    background-image: linear-gradient(to right, transparent, white 95%), linear-gradient(to bottom, transparent, black 100%), url("../img/red_background.png");
+}
+
+#blue_background {
+    background-image: linear-gradient(to left, transparent, white 95%), linear-gradient(to bottom, transparent, black 100%), url("../img/blue_background.png");
+}
+
+.header-background {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+#pokemon_logo {
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 30vw;
+}
+
+#charizard {
+    z-index: 2;
+    position: absolute;
+    transform: translate(50%, 0);
+    top: 19vh;
+    right: 80vw;
+    max-height: 473px;
+    max-width: 473px;
+    width: 20vw;
+}
+
+#blastoise {
+    max-height: 473px;
+    max-width: 473px;
+    width: 20vw;
+    z-index: 2;
+    position: absolute;
+    transform: translate(50%, 0);
+    right: 20vw;
+    top: 20vh;
+}
+
+#pikachu {
+    max-height: 324px;
+    max-width: 324px;
+    width: 20vw;
+    z-index: 2;
+    position: absolute;
+    transform: translate(33%, 0);
+    right: 50%;
+    top: 70vh;
+    background: radial-gradient(ellipse, white 40%, rgba(189, 203, 230) 50%, transparent 67%);
+    padding: 5vh;
+}
+
+#lightning {
+    z-index: 1;
+    height: var(--header-height);
+    position: absolute;
+    object-fit: cover;
+    right: 50%;
+    transform: translate(50%, 0);
+    opacity: 70%;
+}
+
+/******************** VIDEO ********************/
+
+iframe {
+    position: absolute;
+    width: 25vw;
+    height: 18.75vw;
+    top: 33vh;
+    right: 50%;
+    transform: translate(50%, 0);
+    z-index: 3;
+    border: 3px solid black;
+}
+
+/******************** RADIAL JOIN ********************/
+
+#radial_join {
+    display: flex;
+}
+
+#radial_left {
+    width: 50vw;
+    height: 8vh;
+    background-image: linear-gradient(to bottom, transparent, black 100%), linear-gradient(to right, transparent, white 95%);
+}
+
+#radial_right {
+    width: 50vw;
+    height: 8vh;
+    background-image: linear-gradient(to bottom, transparent, black 100%), linear-gradient(to left, transparent, white 95%);
+}
+
+
+/******************** DESCRIPTION ********************/
+
+#leather_section {
+    display: flex;
+    flex-direction: column;
+    font-family: "Pokemon_DP";
+    height: 100vh;
+    background-image: linear-gradient(to bottom, black 10%, transparent 20%, transparent 80%, black 100%), url("../img/leather.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#description_section {
+    z-index: 5;
+    margin-top: 12vh;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#top_description_section {
+    display: flex;
+    margin: 0 5vw;
+}
+
+#text_section {
+    padding: 5vh 5vw;
+}
+
+br {
+    margin-bottom: 1vh;
+}
+
+#prof_chen {
+    max-height: 586px;
+    max-width: 248px;
+    width: 14vw;
+    height: 45vh;
+    align-self: center;
+}
+
+#screenshots_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.screenshot {
+    cursor: pointer;
+    height: 20vh;
+    border: 3px solid black;
+}
+
+.screenshot-mobile {
+    display: none;
+}
+
+
+/******************** DOWNLOAD SECTION ********************/
+
+#download_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#download_link_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-family: "Pokemon_DP";
+    background-image: url(../img/text_box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vw;
+    background-position: center;
+    height: 15vw;
+}
+
+#download_link_container::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 10.5vw;
+    right: 5.75vw;
+    background-color: transparent;
+    height: 2vw;
+    width: 4vw;
+}
+
+#red_computer {
+    margin-left: 10vw;
+    margin-right: 5vw;
+    max-height: 534px;
+    max-width: 500px;
+    width: 24vw;
+}
+
+#windows_logo {
+    height: 5vw;
+    width: auto;
+    margin-left: 4vw;
+}
+
+#download_link_container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1vw;
+    font-size: 1.7vw;
+    width: 28vw;
+}
+
+#download_link {
+    margin-block-start: 6vh;
+    margin-block-end: 6vh;
+}
+
+span.red, span.blue {
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.5s;
+}
+
+span.red {
+    color: red;
+}
+
+span.blue {
+    color: cornflowerblue;
+}
+
+#download_link:hover span.blue {
+    background-color: darkblue;
+    box-shadow: 0 0 50px 7px blue;
+}
+
+#download_link:hover span.red {
+    background: rgb(94, 0, 0);
+    box-shadow: 0 0 50px 7px red;
+}
+
+#download_link_container:hover::after {
+    animation: infinite arrow_blink;
+    animation-duration: 0.66s;
+}
+
+@keyframes arrow_blink {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+/******************** CONTACT SECTION ********************/
+
+#contact_section {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: black;
+}
+
+#icons_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 66vw;
+}
+
+.icon:hover {
+    opacity: 1;
+    box-shadow: 0 0 50px 6px red;
+}
+
+.icon {
+    z-index: 1;
+    position: relative;
+    width: 4vw;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 7px red;
+    opacity: 0.8;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+#copyrights {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 0.7vw;
+}
+
+/******************** FOND GRIS ********************/
+
+#background-layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+/******************** IMAGE EN PREMIER PLAN ********************/
+
+.zoomed-in-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    width: 80vh;
+}
+
+.zoomed-out-image {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/******************** AFFICHAGE TELEPHONE ********************/
+@media (orientation: portrait) {
+
+    /******************** HEADER ********************/
+    :root {
+        --header-height: 100vh;
+    }
+
+    #pokemon_logo {
+        right: 50%;
+        width: 30vh;
+    }
+
+    .header-button {
+        font-size: 4vh;
+        min-height: 4vh;
+        display: table;
+    }
+
+    #game_button {
+        top: 20vh;
+        left: 5vw;
+    }
+
+    #download_button {
+        top: 27vh;
+        left: 5vw;
+    }
+
+    #contact_button {
+        top: 34vh;
+        left: 5vw;
+    }
+
+    #language_button {
+        top: 41vh;
+        left: 5vw;
+    }
+
+    .flag {
+        max-height: 4vh;
+        width: 4.54vh;
+        margin-right: 1vh;
+    }
+
+    #charizard {
+        display: none;
+    }
+
+    #blastoise {
+        width: 25vh;
+        top: 24vh;
+        right: 25vw;
+    }
+
+    iframe {
+        width: 35vh;
+        height: 26.25vh;
+        top: 55vh;
+    }
+
+    #pikachu {
+        max-width: 493px;
+        max-height: 493px;
+        right: 50%;
+        transform: translate(50%, 0);
+        top: 90vh;
+        width: 20vh;
+    }
+
+    #lightning {
+        display: none;
+    }
+
+    /******************** DESCRIPTION DU JEU ********************/
+    #prof_chen {
+        display: none;
+    }
+
+    #leather_section {
+        height: 200vh;
+        linear-gradient(to bottom, black 5%, transparent 20%, transparent 80%, black 90%), url("../img/leather.jpg");
+    }
+
+    #description_section {
+        font-size: 2vh;
+        text-align: justify;
+    }
+
+    #text_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #screenshots_container {
+        display: none;
+    }
+
+    .screenshot-mobile {
+        cursor: pointer;
+        height: 25vh;
+        margin: 2vh 0;
+        border: 3px solid black;
+        display: block;
+    }
+
+    /******************** IMAGE EN PREMIER PLAN ********************/
+
+    .zoomed-in-image {
+        width: 80vw;
+    }
+
+    /******************** ZONE TELECHARGEMENT ********************/
+
+    #download_section {
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    #windows_logo {
+        height: 5vh;
+        margin-left: 4vh;
+    }
+
+    #download_link_container {
+        width: 45vh;
+        height: 15vh;
+        margin-left: 5vh;
+    }
+
+    #download_link_container a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1vh;
+        font-size: 2vh;
+        width: 30vh;
+    }
+
+    #download_link_container::after {
+        display: none;
+    }
+
+    /******************** FOOTER ********************/
+
+    #red_computer {
+        display: none;
+    }
+
+    #icons_section {
+        width: 80vw;
+    }
+
+    .icon {
+        width: 6vh;
+    }
+
+    #copyrights {
+        margin: 5vw 5vw 0.5vh 5vw;
+        font-size: 1.5vh;
+    }
+}
